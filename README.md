@@ -16,7 +16,7 @@ Generative Montage presents a structural vulnerability to Large Language Models 
 
 Because each individual premise is factually true, premise-level classifiers and retrieval fact-checkers achieve 0.0% recall. **STRAND** addresses this challenge by shifting auditing from individual premise truth to relation-level causal provenance:
 1. **Module 1: Kinetic Belief Tracking (Efficiency Gate)**: Tracks discrete velocity ($v_t$) and acceleration ($a_t$) over sequential stance trajectories ($p_t \in [-1, 1]$), bypassing graph extraction on 87.5% of benign turns.
-2. **Module 2: Relation-Level DAG Provenance Auditing (Primary Detector)**: Evaluates a deterministic relation-level lexical provenance heuristic ($\operatorname{CausalSupp}$) over candidate reasoning DAGs ($G = (V, E)$), pruning ungrounded edges when topological provenance ratio $\eta(G) < 0.50$.
+2. **Module 2: Relation-Level DAG Provenance Auditing (Primary Detector)**: Evaluates a deterministic relation-level lexical provenance heuristic ($\text{CausalSupp}$) over candidate reasoning DAGs ($G = (V, E)$), pruning ungrounded edges when topological provenance ratio $\eta(G) < 0.50$.
 3. **Module 3: Epistemic Inoculation Prompting (Mitigation)**: Injects targeted context-preserving grounding constraints into victim LLM prompts to neutralize deceptive inference.
 
 ---
@@ -67,9 +67,9 @@ Because each individual premise is factually true, premise-level classifiers and
 | :--- | :--- | :--- |
 | **Section 2.1** | $v_t = p_t - p_{t-1}, \quad a_t = p_t - 2p_{t-1} + p_{t-2}$ | `strand.belief_tracker.KineticBeliefTracker` |
 | **Section 2.1 (Eq. 2)** | $I_{\text{kinetic}}(t) = \mathbb{I}[a_t > \alpha_{\text{thresh}} \land v_t > 0.15]$ | `KineticBeliefTracker.update()` |
-| **Section 2.2 (Eq. 3)** | $\operatorname{CausalSupp}(u \to v, \mathcal{S}) = \mathbb{I}[\exists s_i \in \mathcal{S}_{\text{prem}} : \operatorname{Cooccur}(u, v, s_i) \land \operatorname{HasConn}(s_i)]$ | `strand.causal_dag.causal_supp()` |
+| **Section 2.2 (Eq. 3)** | $\text{CausalSupp}(u \to v, \mathcal{S}) = \mathbb{I}[\exists s_i \in \mathcal{S}_{\text{prem}} : \text{Cooccur}(u, v, s_i) \land \text{HasConn}(s_i)]$ | `strand.causal_dag.causal_supp()` |
 | **Algorithm 1** | Deterministic `CausalSupp` Edge Provenance Audit | `CausalDAGAuditor.audit()` |
-| **Section 2.2 (Ratio)** | $\eta(G) = \frac{1}{\|E\|} \sum_{e \in E} \operatorname{Gr}(e)$ | `DAGAuditReport.provenance_ratio` |
+| **Section 2.2 (Ratio)** | $\eta(G) = \frac{1}{|E|} \sum_{e \in E} \text{Gr}(e)$ | `DAGAuditReport.provenance_ratio` |
 | **Section 2.3** | Epistemic Inoculation Prompt Template | `strand.counter_prompt.EpistemicInoculator` |
 | **Figure 1** | Cascaded Defense Pipeline Architecture | `strand.guard_pipeline.STRANDPipeline` |
 
@@ -82,8 +82,8 @@ Because each individual premise is factually true, premise-level classifiers and
 Clone the repository and install core dependencies:
 
 ```bash
-git clone https://github.com/anonymous/STRAND-defense.git
-cd STRAND-defense
+git clone https://github.com/Jannat332/STRAND.git
+cd STRAND
 pip install -r requirements.txt
 ```
 

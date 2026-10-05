@@ -1,0 +1,37 @@
+# STRAND Hyperparameter Configuration
+# Calibrated on Development Partition (6 feeds, 30%) as reported in Section 3.1
+
+module1_kinetics:
+  alpha_thresh: 0.15        # Second-order belief acceleration threshold (Equation 2)
+  velocity_floor: 0.15      # Directional velocity lower bound (Equation 2)
+  dt_turn_step: 1           # Turn difference interval (Delta t = 1)
+
+module2_causal_dag:
+  eta_thresh: 0.50          # Topological provenance ratio threshold (Section 2.2)
+  causal_connectors:
+    - "because"
+    - "therefore"
+    - "as a result"
+    - "caused"
+    - "led to"
+    - "leads to"
+    - "proves that"
+    - "proving that"
+    - "indicates that"
+    - "indicating that"
+    - "consequently"
+    - "thus"
+    - "hence"
+  temporal_connectors:
+    - "later"
+    - "subsequently"
+    - "after"
+    - "before"
+    - "then"
+    - "followed by"
+    - "meanwhile"
+    - "concurrently"
+    - "prior to"
+
+module3_inoculation:
+  template: "[STRAND Audit: The preceding inputs establish isolated factual statements {{s_i}}, but do not substantiate causal dependency {unsupported_dependency}. Formulate deductions strictly grounded in verified edges.]"

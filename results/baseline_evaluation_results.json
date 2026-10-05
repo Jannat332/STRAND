@@ -1,0 +1,83 @@
+[
+  {
+    "method": "1. Raw LLM (No Defense)",
+    "recall": 0.0,
+    "precision": 0.0,
+    "f1": 0.0,
+    "fpr": 0.0,
+    "auroc": 0.5,
+    "latency_ms": 0.0
+  },
+  {
+    "method": "2. Retrieval Fact-Checking",
+    "recall": 0.0,
+    "precision": 0.0,
+    "f1": 0.0,
+    "fpr": 0.0,
+    "auroc": 0.5,
+    "latency_ms": 0.0
+  },
+  {
+    "method": "3. Sentence NLI Verification",
+    "recall": 25.0,
+    "precision": 100.0,
+    "f1": 40.0,
+    "fpr": 0.0,
+    "auroc": 0.625,
+    "latency_ms": 0.0
+  },
+  {
+    "method": "4. Skeptical Prompting",
+    "recall": 12.5,
+    "precision": 50.0,
+    "f1": 20.0,
+    "fpr": 28.6,
+    "auroc": 0.5,
+    "latency_ms": 0.0
+  },
+  {
+    "method": "5. Entailment Verification Prompting",
+    "recall": 100.0,
+    "precision": 88.9,
+    "f1": 94.1,
+    "fpr": 28.6,
+    "auroc": 0.857,
+    "latency_ms": 0.0
+  },
+  {
+    "method": "6. Kinetic-Only STRAND (Module 1)",
+    "recall": 81.2,
+    "precision": 100.0,
+    "f1": 89.7,
+    "fpr": 0.0,
+    "auroc": 0.906,
+    "latency_ms": 0.14
+  },
+  {
+    "method": "7. DAG-Only STRAND (Module 2)",
+    "recall": 100.0,
+    "precision": 100.0,
+    "f1": 100.0,
+    "fpr": 0.0,
+    "auroc": 1.0,
+    "latency_ms": 0.13
+  },
+  {
+    "method": "8. Kinetic + DAG (No Inoculation)",
+    "recall": 100.0,
+    "precision": 100.0,
+    "f1": 100.0,
+    "fpr": 0.0,
+    "auroc": 1.0,
+    "latency_ms": 0.15
+  },
+  {
+    "method": "9. Full STRAND (Kinetic + DAG + Inoculation)",
+    "recall": 100.0,
+    "precision": 100.0,
+    "f1": 100.0,
+    "fpr": 0.0,
+    "auroc": 1.0,
+    "latency_ms": 0.15
+  }
+]

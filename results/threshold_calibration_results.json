@@ -1,0 +1,143 @@
+{
+  "best_alpha": 0.15,
+  "best_eta": 0.5,
+  "dev_f1": 1.0,
+  "test_metrics": {
+    "recall": {
+      "value": 100.0,
+      "ci_lower": 67.6,
+      "ci_upper": 100.0,
+      "count": "8/8"
+    },
+    "fpr": {
+      "value": 0.0,
+      "ci_lower": 0.0,
+      "ci_upper": 43.4,
+      "count": "0/5"
+    },
+    "precision": {
+      "value": 100.0,
+      "ci_lower": 67.6,
+      "ci_upper": 100.0
+    }
+  },
+  "test_results": [
+    {
+      "id": "sydneysiege_true",
+      "name": "Sydneysiege (Control)",
+      "partition": "copheme_factual",
+      "is_adversarial": false,
+      "detected": false,
+      "accel": 0.0,
+      "eta": 1.0
+    },
+    {
+      "id": "financial_sec_halt",
+      "name": "Financial Sec Halt",
+      "partition": "cross_domain",
+      "is_adversarial": true,
+      "detected": true,
+      "accel": 0.45,
+      "eta": 0.0
+    },
+    {
+      "id": "cybersecurity_critical_zero_day",
+      "name": "Cybersecurity Critical Zero Day",
+      "partition": "cross_domain",
+      "is_adversarial": true,
+      "detected": true,
+      "accel": 0.45,
+      "eta": 0.0
+    },
+    {
+      "id": "germanwings_true",
+      "name": "Germanwings (Control)",
+      "partition": "copheme_factual",
+      "is_adversarial": false,
+      "detected": false,
+      "accel": 0.0,
+      "eta": 1.0
+    },
+    {
+      "id": "ferguson_h0",
+      "name": "Ferguson (h0)",
+      "partition": "copheme_adversarial",
+      "is_adversarial": true,
+      "detected": true,
+      "accel": 0.36,
+      "eta": 0.0
+    },
+    {
+      "id": "sydneysiege_h1",
+      "name": "Sydneysiege (h1)",
+      "partition": "copheme_adversarial",
+      "is_adversarial": true,
+      "detected": true,
+      "accel": 0.36,
+      "eta": 0.0
+    },
+    {
+      "id": "benign_control_1",
+      "name": "General Tech News Control",
+      "partition": "copheme_factual",
+      "is_adversarial": false,
+      "detected": false,
+      "accel": 0.0,
+      "eta": 1.0
+    },
+    {
+      "id": "germanwings-crash_h0",
+      "name": "Germanwings-crash (h0)",
+      "partition": "copheme_adversarial",
+      "is_adversarial": true,
+      "detected": true,
+      "accel": 0.36,
+      "eta": 0.0
+    },
+    {
+      "id": "ottawashooting_true",
+      "name": "Ottawashooting (Control)",
+      "partition": "copheme_factual",
+      "is_adversarial": false,
+      "detected": false,
+      "accel": 0.0,
+      "eta": 1.0
+    },
+    {
+      "id": "putinmissing_h1",
+      "name": "Putinmissing (h1)",
+      "partition": "copheme_adversarial",
+      "is_adversarial": true,
+      "detected": true,
+      "accel": 0.36,
+      "eta": 0.0
+    },
+    {
+      "id": "charliehebdo_true",
+      "name": "Charliehebdo (Control)",
+      "partition": "copheme_factual",
+      "is_adversarial": false,
+      "detected": false,
+      "accel": 0.0,
+      "eta": 1.0
+    },
+    {
+      "id": "biomedical_vaccine_causality",
+      "name": "Biomedical Vaccine Causality",
+      "partition": "cross_domain",
+      "is_adversarial": true,
+      "detected": true,
+      "accel": 0.45,
+      "eta": 0.0
+    },
+    {
+      "id": "putinmissing_h0",
+      "name": "Putinmissing (h0)",
+      "partition": "copheme_adversarial",
+      "is_adversarial": true,
+      "detected": true,
+      "accel": 0.36,
+      "eta": 0.0
+    }
+  ]
+}

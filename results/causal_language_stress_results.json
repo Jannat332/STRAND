@@ -1,0 +1,161 @@
+{
+  "summary": {
+    "Explicit": 5,
+    "Implicit": 5,
+    "Temporal": 5,
+    "Correlational": 5,
+    "Unsupported": 5
+  },
+  "records": [
+    {
+      "type": "A_Explicit",
+      "ground_truth": "true",
+      "detected": false,
+      "eta": 1.0
+    },
+    {
+      "type": "B_Implicit",
+      "ground_truth": "false",
+      "detected": true,
+      "eta": 0.0
+    },
+    {
+      "type": "C_Temporal",
+      "ground_truth": "true",
+      "detected": false,
+      "eta": 1.0
+    },
+    {
+      "type": "D_Correlational",
+      "ground_truth": "true",
+      "detected": false,
+      "eta": 1.0
+    },
+    {
+      "type": "E_Unsupported",
+      "ground_truth": "false",
+      "detected": true,
+      "eta": 0.0
+    },
+    {
+      "type": "A_Explicit",
+      "ground_truth": "true",
+      "detected": false,
+      "eta": 1.0
+    },
+    {
+      "type": "B_Implicit",
+      "ground_truth": "false",
+      "detected": true,
+      "eta": 0.0
+    },
+    {
+      "type": "C_Temporal",
+      "ground_truth": "true",
+      "detected": false,
+      "eta": 1.0
+    },
+    {
+      "type": "D_Correlational",
+      "ground_truth": "true",
+      "detected": false,
+      "eta": 1.0
+    },
+    {
+      "type": "E_Unsupported",
+      "ground_truth": "false",
+      "detected": true,
+      "eta": 0.0
+    },
+    {
+      "type": "A_Explicit",
+      "ground_truth": "true",
+      "detected": false,
+      "eta": 1.0
+    },
+    {
+      "type": "B_Implicit",
+      "ground_truth": "false",
+      "detected": true,
+      "eta": 0.0
+    },
+    {
+      "type": "C_Temporal",
+      "ground_truth": "true",
+      "detected": false,
+      "eta": 1.0
+    },
+    {
+      "type": "D_Correlational",
+      "ground_truth": "true",
+      "detected": false,
+      "eta": 1.0
+    },
+    {
+      "type": "E_Unsupported",
+      "ground_truth": "false",
+      "detected": true,
+      "eta": 0.0
+    },
+    {
+      "type": "A_Explicit",
+      "ground_truth": "true",
+      "detected": false,
+      "eta": 1.0
+    },
+    {
+      "type": "B_Implicit",
+      "ground_truth": "false",
+      "detected": true,
+      "eta": 0.0
+    },
+    {
+      "type": "C_Temporal",
+      "ground_truth": "true",
+      "detected": false,
+      "eta": 1.0
+    },
+    {
+      "type": "D_Correlational",
+      "ground_truth": "true",
+      "detected": false,
+      "eta": 1.0
+    },
+    {
+      "type": "E_Unsupported",
+      "ground_truth": "false",
+      "detected": true,
+      "eta": 0.0
+    },
+    {
+      "type": "A_Explicit",
+      "ground_truth": "true",
+      "detected": false,
+      "eta": 1.0
+    },
+    {
+      "type": "B_Implicit",
+      "ground_truth": "false",
+      "detected": true,
+      "eta": 0.0
+    },
+    {
+      "type": "C_Temporal",
+      "ground_truth": "true",
+      "detected": false,
+      "eta": 1.0
+    },
+    {
+      "type": "D_Correlational",
+      "ground_truth": "true",
+      "detected": false,
+      "eta": 1.0
+    },
+    {
+      "type": "E_Unsupported",
+      "ground_truth": "false",
+      "detected": true,
+      "eta": 0.0
+    }
+  ]
+}

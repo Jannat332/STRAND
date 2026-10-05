@@ -1,0 +1,65 @@
+{
+  "belief_estimation_simulated_llm": {
+    "mean": 455.39,
+    "std": 0.219,
+    "median": 455.369,
+    "p95": 455.732,
+    "p99": 456.017
+  },
+  "rationale_generation_simulated_llm": {
+    "mean": 352.608,
+    "std": 0.26,
+    "median": 352.622,
+    "p95": 353.178,
+    "p99": 353.207
+  },
+  "symbolic_belief_tracking": {
+    "mean": 0.13,
+    "std": 0.043,
+    "median": 0.128,
+    "p95": 0.202,
+    "p99": 0.277
+  },
+  "symbolic_graph_extraction": {
+    "mean": 0.118,
+    "std": 0.026,
+    "median": 0.123,
+    "p95": 0.168,
+    "p99": 0.173
+  },
+  "symbolic_relation_verification": {
+    "mean": 0.113,
+    "std": 0.024,
+    "median": 0.119,
+    "p95": 0.147,
+    "p99": 0.158
+  },
+  "symbolic_graph_pruning": {
+    "mean": 0.0,
+    "std": 0.0,
+    "median": 0.0,
+    "p95": 0.0,
+    "p99": 0.0
+  },
+  "symbolic_inoculation_generation": {
+    "mean": 0.021,
+    "std": 0.005,
+    "median": 0.021,
+    "p95": 0.031,
+    "p99": 0.033
+  },
+  "total_symbolic_pipeline": {
+    "mean": 0.381,
+    "std": 0.09,
+    "median": 0.392,
+    "p95": 0.551,
+    "p99": 0.597
+  },
+  "total_full_pipeline_with_llm": {
+    "mean": 808.379,
+    "std": 0.398,
+    "median": 808.351,
+    "p95": 809.037,
+    "p99": 809.421
+  }
+}
